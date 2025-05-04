@@ -174,7 +174,7 @@ class LikeButton @JvmOverloads constructor(
         }
     }
 
-    private fun setUIState(uiState: UIState, isAnim: Boolean) {
+    fun setUIState(uiState: UIState, isAnim: Boolean) {
         updateBackgroundColor(uiState)
 
         if (isAnim) {
