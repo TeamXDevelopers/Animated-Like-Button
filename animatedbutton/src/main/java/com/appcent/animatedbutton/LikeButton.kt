@@ -174,6 +174,18 @@ class LikeButton @JvmOverloads constructor(
         }
     }
 
+    fun toggleLike(isAnim: Boolean){
+        if(uiState == UIState.UnLike){
+            setUIState(UIState.Like, isAnim)
+        }
+    }
+
+    fun toggleUnLike(isAnim: Boolean){
+        if(uiState == UIState.Like){
+            setUIState(UIState.UnLike, isAnim)
+        }
+    }
+
     fun setUIState(uiState: UIState, isAnim: Boolean) {
         updateBackgroundColor(uiState)
 
